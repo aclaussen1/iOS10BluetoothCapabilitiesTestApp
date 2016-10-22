@@ -17,10 +17,12 @@
 		50A2DD901D61627B00FDD7F4 /* CTCentralTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 50A2DD8F1D61627B00FDD7F4 /* CTCentralTest.m */; };
 		50C33B171D619C1300B6F334 /* CTPeripheralInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C33B161D619C1300B6F334 /* CTPeripheralInfo.m */; };
 		50C33B1A1D61A1D900B6F334 /* ScanTestTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C33B191D61A1D900B6F334 /* ScanTestTableViewCell.m */; };
+		991E5057C7F5DB5A132326F8 /* Pods_CB_iOS10.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EA11321078A2E2247D81BFE /* Pods_CB_iOS10.framework */; };
 		B18059301DBB36E600613162 /* Pulse2SDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B180592F1DBB36E600613162 /* Pulse2SDK.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1EA11321078A2E2247D81BFE /* Pods_CB_iOS10.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CB_iOS10.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		50A2DD6D1D615FB600FDD7F4 /* CB iOS10.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CB iOS10.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		50A2DD711D615FB600FDD7F4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		50A2DD731D615FB600FDD7F4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -39,9 +41,11 @@
 		50C33B161D619C1300B6F334 /* CTPeripheralInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTPeripheralInfo.m; sourceTree = "<group>"; };
 		50C33B181D61A1D900B6F334 /* ScanTestTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScanTestTableViewCell.h; sourceTree = "<group>"; };
 		50C33B191D61A1D900B6F334 /* ScanTestTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScanTestTableViewCell.m; sourceTree = "<group>"; };
+		8B437997E33045E1530A7D8F /* Pods-CB iOS10.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CB iOS10.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CB iOS10/Pods-CB iOS10.debug.xcconfig"; sourceTree = "<group>"; };
 		B18059271DBB349600613162 /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
 		B180592F1DBB36E600613162 /* Pulse2SDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Pulse2SDK.framework; sourceTree = "<group>"; };
 		B18059311DBB37EB00613162 /* CB iOS10.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "CB iOS10.entitlements"; sourceTree = "<group>"; };
+		B78C4E58E98C01C5AE1EA1E1 /* Pods-CB iOS10.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CB iOS10.release.xcconfig"; path = "Pods/Target Support Files/Pods-CB iOS10/Pods-CB iOS10.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +54,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B18059301DBB36E600613162 /* Pulse2SDK.framework in Frameworks */,
+				991E5057C7F5DB5A132326F8 /* Pods_CB_iOS10.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +67,7 @@
 				50A2DD6F1D615FB600FDD7F4 /* CB iOS10 */,
 				50A2DD6E1D615FB600FDD7F4 /* Products */,
 				B18059231DBB301400613162 /* Frameworks */,
+				FC4B3087421DDA4E6C2BDFD4 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -119,8 +125,18 @@
 			children = (
 				B180592F1DBB36E600613162 /* Pulse2SDK.framework */,
 				B18059271DBB349600613162 /* ExternalAccessory.framework */,
+				1EA11321078A2E2247D81BFE /* Pods_CB_iOS10.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FC4B3087421DDA4E6C2BDFD4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8B437997E33045E1530A7D8F /* Pods-CB iOS10.debug.xcconfig */,
+				B78C4E58E98C01C5AE1EA1E1 /* Pods-CB iOS10.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -130,9 +146,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 50A2DD841D615FB600FDD7F4 /* Build configuration list for PBXNativeTarget "CB iOS10" */;
 			buildPhases = (
+				541E536472DDCF59F128F055 /* [CP] Check Pods Manifest.lock */,
 				50A2DD691D615FB600FDD7F4 /* Sources */,
 				50A2DD6A1D615FB600FDD7F4 /* Frameworks */,
 				50A2DD6B1D615FB600FDD7F4 /* Resources */,
+				F23B1F7BA203713594CD9872 /* [CP] Embed Pods Frameworks */,
+				E1FABC4A6E2F20C2B5F2C507 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -155,6 +174,7 @@
 					50A2DD6C1D615FB600FDD7F4 = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = 4FB48FQDVK;
+						LastSwiftMigration = 0800;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 1;
@@ -196,6 +216,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		541E536472DDCF59F128F055 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E1FABC4A6E2F20C2B5F2C507 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CB iOS10/Pods-CB iOS10-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F23B1F7BA203713594CD9872 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CB iOS10/Pods-CB iOS10-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		50A2DD691D615FB600FDD7F4 /* Sources */ = {
@@ -324,6 +392,7 @@
 		};
 		50A2DD851D615FB600FDD7F4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B437997E33045E1530A7D8F /* Pods-CB iOS10.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "CB iOS10/CB iOS10.entitlements";
@@ -337,11 +406,13 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.schneider-electric.CB-iOS10";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		50A2DD861D615FB600FDD7F4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B78C4E58E98C01C5AE1EA1E1 /* Pods-CB iOS10.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "CB iOS10/CB iOS10.entitlements";
@@ -355,6 +426,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.schneider-electric.CB-iOS10";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
